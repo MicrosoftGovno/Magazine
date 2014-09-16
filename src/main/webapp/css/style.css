@@ -1,0 +1,20 @@
+html {
+    background-image: url("image/image1.jpg");
+}
+
+body {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+
+.access {
+    background-color: black;
+    color:white;
+    padding: 3px;
+}
+
+.header_menu li {
+    display: inline;
+    padding: 13;
+}

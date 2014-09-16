@@ -1,0 +1,20 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="magazine" >
+
+        <!--<jta-data-source>magazine</jta-data-source>-->
+        <class>jpa.AdminEntity</class>
+        <class>jpa.ArticleEntity</class>
+        <properties>
+            <property name="hibernate.dialect" value="jpa.SQLiteDialect" />
+            <property name="hibernate.connection.url"
+                      value="jdbc:sqlite:forumDatabase.db"/>
+            <property name="hibernate.connection.driver_class" value="org.sqlite.JDBC"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+        </properties>
+    </persistence-unit>
+</persistence>
